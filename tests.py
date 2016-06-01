@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-#	Copyright 2013 AlchemyAPI
+#   Copyright 2013 AlchemyAPI
 #
 #   Licensed under the Apache License, Version 2.0 (the "License");
 #   you may not use this file except in compliance with the License.
@@ -20,11 +20,13 @@ from alchemyapi import AlchemyAPI
 
 
 test_text = 'Bob broke my heart, and then made up this silly sentence to test the PHP SDK'
-test_html = '<html><head><title>The best SDK Test | AlchemyAPI</title></head><body><h1>Hello World!</h1><p>My favorite language is PHP</p></body></html>'
+test_html = '<html><head><title>The best SDK Test | AlchemyAPI</title>'
+'</head><body><h1>Hello World!</h1><p>My favorite language is PHP</p></body></html>'
 test_url = 'http://www.nytimes.com/2013/07/13/us/politics/a-day-of-friction-notable-even-for-a-fractious-congress.html?_r=0'
 test_jpg = 'pigeon.jpg'
 
-
+alchemyapi = AlchemyAPI('TEST')
+assert(alchemyapi.apikey == 'TEST')
 alchemyapi = AlchemyAPI()
 
 
